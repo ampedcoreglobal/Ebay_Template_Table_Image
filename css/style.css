@@ -23,7 +23,7 @@ img {
 
 .__template_wrapper {
 	color: #111111;
-	background-color: #3C9DD0;
+	background-color: #125CB9;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -97,7 +97,7 @@ label[for=__mobile_nav]::after {
 }
 
 .__template_nav_link:hover {
-	color: #3C9DD0;
+	color: #125CB9;
 }
 
 .__template_nav_level_two {
@@ -181,7 +181,7 @@ label[for=__mobile_nav]::after {
 
 .__template_bullets ul li::before {
 	content: "\f14a";
-	color: #3C9DD0;
+	color: #125CB9;
 	margin-right: 0.5rem;
 	font-weight: 900;
 	/* font-size: 0.75rem; */
@@ -387,7 +387,7 @@ label[for=__mobile_nav]::after {
 #__image_10:checked~.__small_thumb_wrapper .__small_thumb_single:nth-child(10),
 #__image_11:checked~.__small_thumb_wrapper .__small_thumb_single:nth-child(11),
 #__image_12:checked~.__small_thumb_wrapper .__small_thumb_single:nth-child(12) {
-	border-color: #EC6D23;
+	border-color: #125CB9;
 }
 
 /* #__thumb_control_1:checked~.__thumb_control_left label[for="__thumb_control_9"],
@@ -578,7 +578,7 @@ label[for=__mobile_nav]::after {
 
 .__tab_control label:hover {
 	/* background-color: #E5EAEE; */
-	border-color: #EC6D23;
+	border-color: #125CB9;
 }
 
 #__tab_1:checked~.__tab_control_wrapper label[for="__tab_1"],
@@ -586,8 +586,8 @@ label[for=__mobile_nav]::after {
 #__tab_3:checked~.__tab_control_wrapper label[for="__tab_3"],
 #__tab_4:checked~.__tab_control_wrapper label[for="__tab_4"],
 #__tab_5:checked~.__tab_control_wrapper label[for="__tab_5"] {
-	color: #EC6D23;
-	border-color: #EC6D23;
+	color: #125CB9;
+	border-color: #125CB9;
 	background-color: #E5EAEE;
 }
 
@@ -623,7 +623,7 @@ label[for=__mobile_nav]::after {
 #__tab_4:checked~.__tab_content_wrapper label[for="__tab_4"]::after,
 #__tab_5:checked~.__tab_content_wrapper label[for="__tab_5"]::after {
 	content: "\f3be";
-	color: #EC6D23;
+	color: #125CB9;
 }
 
 .__tab_content {
@@ -705,7 +705,7 @@ label[for=__mobile_nav]::after {
 }
 
 .__footer_links a:hover {
-	color: #EC6D23;
+	color: #125CB9;
 }
 
 .__footer_copyright {
@@ -769,7 +769,7 @@ label[for=__mobile_nav]::after {
 		grid-template-rows: 1fr;
 	}
 	.__template_nav_level_two .__template_nav_single:first-child {
-		border-top: 0.25rem solid #EC6D23;
+		border-top: 0.25rem solid #125CB9;
 	}
 	/* === Section Gallery === */
 	.__template_section_gallery {
