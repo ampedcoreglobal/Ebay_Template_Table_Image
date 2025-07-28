@@ -1,1 +1,0 @@
-Amped Core Global
