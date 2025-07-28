@@ -181,7 +181,7 @@ label[for=__mobile_nav]::after {
 
 .__template_bullets ul li::before {
 	content: "\f14a";
-	color: #EC6D23;
+	color: #3C9DD0;
 	margin-right: 0.5rem;
 	font-weight: 900;
 	/* font-size: 0.75rem; */
