@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
-    <link href="https://sdnath2020.github.io/cybermechanical/css/style.css" rel="stylesheet">
+    <link href="https://ampedcoreglobal.github.io/Ebay_Template_Table_Image/css/style.css" rel="stylesheet">
     <style>
       .__small_thumb_extend {
         width: {{ images|length * 25 }}%;
@@ -26,21 +24,19 @@
       }{% endif %}
     </style>
 
-    <title>Cyber Mechanical</title>
+    <title>Amped Core Global</title>
   </head>
   <body>
-    
     <div class="__template_wrapper">
       <div class="container">
         <div class="__template_inner">
 
           <div class="__template_banner">
-            <img src="https://sdnath2020.github.io/cybermechanical/images/banner.png" alt="Cyber Mechanical">
+            <img src="https://ampedcoreglobal.github.io/Ebay_Template_Table_Image/images/banner.png" alt="Amped Core Global">
           </div>
 
           <div class="__template_nav_wrapper">
             <div class="__template_nav">
-              
               <input type="checkbox" id="__mobile_nav" hidden>
               <label for="__mobile_nav">Categories</label>
               
@@ -49,56 +45,45 @@
                   
                   <div class="__template_nav_single">
                     <span class="__template_nav_link __template_nav_plus d-none d-md-block">Categories</span>
-                    
                     <div class="__template_nav_level_two">
                       <div class="__template_nav_div">
-                        
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/cybermechanical/Alternators/_i.html?store_cat=37085748017" target="_blank" class="__template_nav_link">Alternators</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Alternators/_i.html" target="_blank" class="__template_nav_link">High Output Alternators</a>
                         </div>
-                        
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/cybermechanical/Automotive-Accessories/_i.html?store_cat=36661312017" target="_blank" class="__template_nav_link">Automotive Accessories</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-and-Alternator-Parts/_i.html" target="_blank" class="__template_nav_link">Alternator Parts</a>
                         </div>
-                        
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/cybermechanical/Starters/_i.html?store_cat=36819929017" target="_blank" class="__template_nav_link">Starters</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html" target="_blank" class="__template_nav_link">Starter Motors</a>
                         </div>
-                        
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/cybermechanical/Other/_i.html?store_cat=1" target="_blank" class="__template_nav_link">Other</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Automotive-Accessories/_i.html" target="_blank" class="__template_nav_link">Automotive Accessories</a>
                         </div>
-
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="__template_nav_single d-none d-md-block">
-                    <a href="https://www.ebay.com/str/cybermechanical" target="_blank" class="__template_nav_link">Visit Store</a>
+                    <a href="https://www.ebay.com/str/ampedcoreglobal" target="_blank" class="__template_nav_link">Visit Store</a>
                   </div>
-                  
                   <div class="__template_nav_single d-none d-md-block">
-                    <a href="https://www.ebay.com/fdbk/feedback_profile/cybermechanical?filter=feedback_page:All" target="_blank" class="__template_nav_link">Reviews</a>
+                    <a href="https://www.ebay.com/fdbk/feedback_profile/ampedcoreglobal" target="_blank" class="__template_nav_link">Reviews</a>
                   </div>
-                  
                   <div class="__template_nav_single d-none d-md-block">
-                    <a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=cybermechanical&_trksid=p2545226.m2531.l4583&rt=nc" target="_blank" class="__template_nav_link">Contact Us</a>
+                    <a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=ampedcoreglobal" target="_blank" class="__template_nav_link">Contact Us</a>
                   </div>
 
                 </div>
               </div>
-
             </div>
           </div>
 
           <div class="__template_section_gallery">
-
             <div class="row">
               <div class="col-lg-6">
                 <div class="__template_gallery">
                   <input type="radio" id="__image_1" name="image_gallery" hidden checked>
                   {% for image in images %}{% if loop.index > 1 and loop.index <= 12 %}<input type="radio" id="__image_{{ loop.index }}" name="image_gallery" hidden>{% endif %}{% endfor %}
-
                   <div class="__big_thumb_wrapper">
                     <div class="__big_thumb_extend">
                       {% for image in images %}
@@ -106,65 +91,16 @@
                       <div class="__big_thumb_single">
                         <input type="checkbox" id="__image_light_{{ loop.index }}" hidden>
                         <label for="__image_light_{{ loop.index }}" class="__big_thumb_label">
-                          <img src="{{ image.full }}" alt="Cyber Mechanical">
+                          <img src="{{ image.full }}" alt="Amped Core Global">
                         </label>
                       </div>
                       {% endif %}
                       {% endfor %}
                     </div>
                   </div>
-
-                  {% if images|length > 1 and images|length <= 4 %}
-                  <div class="__small_thumb_wrapper __small_thumb_alt">
-                    {% for image in images %}
-                    <div class="__small_thumb_single">
-                      <label for="__image_{{ loop.index }}" class="__small_thumb_lable">
-                        <img src="{{ image.full }}" alt="Cyber Mechanical">
-                      </label>
-                    </div>
-                    {% endfor %}
-                  </div>
-                  {% endif %}
-                  {% if images|length > 4 %}
-                  <div class="__small_thumb_wrapper">
-                    <input type="radio" id="__thumb_control_1" name="thumb_control" hidden checked>
-                    {% for image in images %}
-                    {% if images|length > 4 and loop.index <= 12 %}
-                    <input type="radio" id="__thumb_control_{{ loop.index - 3 }}" name="thumb_control" hidden>
-                    {% endif %}
-                    {% endfor %}
-
-                    <div class="__thumb_control_left">
-                      {% for image in images %}
-                      {% if images|length >= 4 and loop.index <= 12 %}
-                      <label for="__thumb_control_{{ loop.index - 3 }}"></label>
-                      {% endif %}
-                      {% endfor %}
-                    </div>
-                    <div class="__small_thumb">
-                      <div class="__small_thumb_extend">
-                        {% for image in images %}
-                        {% if loop.index <= 12 %}
-                        <div class="__small_thumb_single">
-                          <label for="__image_{{ loop.index }}" class="__small_thumb_lable">
-                            <img src="{{ image.full }}" alt="Cyber Mechanical">
-                          </label>
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                      </div>
-                    </div>
-                    <div class="__thumb_control_right">
-                      {% for image in images %}
-                      {% if images|length >= 4 and loop.index <= 12 %}
-                      <label for="__thumb_control_{{ loop.index - 3 }}"></label>
-                      {% endif %}
-                      {% endfor %}
-                    </div>
-                  </div>
-                  {% endif %}
                 </div>
               </div>
+
               <div class="col-lg-6">
                 <div class="__template_title">
                   <h1>{{title}}</h1>
@@ -172,7 +108,7 @@
                 <div class="__template_bullets">
                   <ul>
                     {% for bullet in bullets %}
-                    <li> {{ bullet }}</li>
+                    <li>{{ bullet }}</li>
                     {% endfor %}
                   </ul>
                 </div>
@@ -181,13 +117,12 @@
           </div>
 
           <div class="__template_section_description">
-
-           {% if parent_listing.template_data_1 %}
+            {% if parent_listing.template_data_1 %}
               {{ parent_listing.template_data_1 }}
             {% endif %}
-
           </div>
 
+          <!-- ====== WORKING TABS ====== -->
           <div class="__template_section_tab">
             <input type="radio" id="__tab_1" name="tabs" hidden checked>
             <input type="radio" id="__tab_2" name="tabs" hidden>
@@ -206,116 +141,67 @@
             </div>
 
             <div class="__tab_content_wrapper">
-              <div class="__tab_single">
-                <label for="__tab_1">About Us</label>
-                <div class="__tab_content __tab_1">
-                  <div class="__tab_content_inner">
-                    <div class="__tab_description">
-                      <h2>WHY CHOOSE US?</h2>
-                      <p>At Cyber Mechanical our goal is to provide our customers with the best experience. Our specialization is automotive and equipment electrical parts as well as automotive accessories.&nbsp; Our team of professionals is dedicated to provide the best experience for our customers. Your satisfaction is our top priority. You can rest assured knowing that we stand behind our products. Our products are manufactured to the highest quality standards at state of the art facilities. We offer competitive pricing and top notch service along with our high quality part standards. We want our customers to be completely satisfied with their purchase. Let us be your go to part supplier that you can trust.&nbsp; We greatly appreciate your business here at Cyber Mechanical!</p>
-                      <p>Visit our store by <a href="https://www.ebay.com/str/cybermechanical" target="_blank">clicking here</a>.</p>
-                    </div>
+              <div class="__tab_content __tab_1">
+                <div class="__tab_content_inner">
+                  <div class="__tab_description">
+                    <h2>About Amped Core Global</h2>
+                    <p>We specialize in high-output alternators designed for heavy-duty, performance, and luxury applications. Every unit is built to the highest standards and backed by our customer-first guarantee.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_single">
-                <label for="__tab_2">Payment</label>
-                <div class="__tab_content __tab_2">
-                  <div class="__tab_content_inner">
-                    <div class="__tab_description">
-                      <h2>Payments We Accept:</h2>
-                      <ul>
-                        <li>PayPal</li>
-                        <li>Apple Pay</li>
-                        <li>Google Pay</li>
-                        <li>Credit Cards (Visa, Mastercard, Discover, American Express)</li>
-                      </ul>
-                      <p>*Orders will ship within one business day of cleared payment. Payment by PayPal or credit card is generally instant. E-Checks via PayPal will take several days to clear, and orders will be shipped within one business day of receiving a cleared check notification.</p>
-                      <h2>Sales Tax:</h2>
-                      <ul>
-                        <li>Ebay directly collects the sales tax depending on your location</li>
-                      </ul>
-                    </div>
+              <div class="__tab_content __tab_2">
+                <div class="__tab_content_inner">
+                  <div class="__tab_description">
+                    <h2>Payment</h2>
+                    <p>We accept PayPal, Apple Pay, Google Pay, and all major credit cards. Orders ship within 1 business day after payment clears.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_single">
-                <label for="__tab_3">Shipping</label>
-                <div class="__tab_content __tab_3">
-                  <div class="__tab_content_inner">
-                    <div class="__tab_description">
-                      <h2>Shipping:</h2>
-                      <ul>
-                        <li>We ship with UPS and USPS. Any offer of <strong>"Free Shipping"</strong> is valid only in the continental United States.</li>
-                        <li>When your order clears, you should receive an automated message with your tracking information. If you do not see this message within 24 hours of placing your order, feel free to contact us for this information.</li>
-                        <li>Tracking information can also be accessed by navigating to your purchase history under My eBay, and choosing "Purchase History" and there you will see a link to click on with your tracking number.</li>
-                      </ul>
-                      <h2>Order Processing Time:</h2>
-                      <ul>
-                        <li>We will ship the same business day if you complete your purchase by 08:00 AM EST. All others will ship the next business day.</li>
-                        <li>All orders ship within 24 hours!</li>
-                      </ul>
-                    </div>
+              <div class="__tab_content __tab_3">
+                <div class="__tab_content_inner">
+                  <div class="__tab_description">
+                    <h2>Shipping</h2>
+                    <p>We ship via UPS and USPS. Free shipping applies to the continental US only. Tracking is provided on all orders.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_single">
-                <label for="__tab_4">Return</label>
-                <div class="__tab_content __tab_4">
-                  <div class="__tab_content_inner">
-                    <div class="__tab_description">
-                    
-                      <h2>Returns:</h2>
-                      <ul>
-                        <li>All of our products can be returned for FREE within 30 business days of receipt.</li>
-<li>The item(s) must be returned in the original box in the exact NEW condition it was received.</li>
-<li>Please pack the return properly so that it will arrive to us without damage.</li>
-<li>Such returns must be shipped back to Cyber Mechanical and the correct return address will be provided by us upon accepting the return and we will provide a pre-paid shipping label</li>
-<li>All items will be inspected upon return.  If the part does not arrive in acceptable condition including scratches, dents, broken or missing parts, excessively dirty, or improperly packed causing damage in transit, then a restocking fee will be assessed and deducted from the refund.
-                      </ul>
-                      <h2>Thank you for choosing Cyber Mechanical!</h2>
-                    </div>
+              <div class="__tab_content __tab_4">
+                <div class="__tab_content_inner">
+                  <div class="__tab_description">
+                    <h2>Returns</h2>
+                    <p>We offer 30-day hassle-free returns. Please contact us before sending anything back to get the correct RMA and return address.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_single">
-                <label for="__tab_5">Contact Us</label>
-                <div class="__tab_content __tab_5">
-                  <div class="__tab_content_inner">
-                    <div class="__tab_description">
-                      <h2>Contact Us:</h2>
-                      <ul>
-                        <li>Please&nbsp;<a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=cybermechanical" target="_blank">click here</a>&nbsp;to contact us if you have any questions or wish to return an item.</li>
-                        <li>We are a rapidly growing small business with almost 20  years of experience in the industry and we will take every step to ensure the satisfaction of our customers!</li>
-                        <li><a href="https://www.ebay.com/str/cybermechanical" target="_blank">Click Here</a>&nbsp;to Visit Our Store!</li>
-                      </ul>
-                    </div>
+              <div class="__tab_content __tab_5">
+                <div class="__tab_content_inner">
+                  <div class="__tab_description">
+                    <h2>Contact Us</h2>
+                    <p><a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=ampedcoreglobal" target="_blank">Click here</a> to reach our support team. We’re here to ensure you get the best experience possible.</p>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
+          <!-- ====== END WORKING TABS ====== -->
 
           <div class="__template_section_footer">
             <div class="__footer_links">
-              <a href="https://www.ebay.com/str/cybermechanical" target="_blank">Visit Store</a>
-              <!-- <a href="https://www.ebay.com/str/cybermechanical#tab1" target="_blank">About Us</a> -->
-              <a href="https://www.ebay.com/fdbk/feedback_profile/cybermechanical?filter=feedback_page:All" target="_blank">Feedback</a>
-              <a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=cybermechanical&_trksid=p2545226.m2531.l4583&rt=nc" target="_blank">Contact Us</a>
+              <a href="https://www.ebay.com/str/ampedcoreglobal" target="_blank">Visit Store</a>
+              <a href="https://www.ebay.com/fdbk/feedback_profile/ampedcoreglobal" target="_blank">Feedback</a>
+              <a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=ampedcoreglobal" target="_blank">Contact Us</a>
             </div>
             <div class="__footer_copyright">
-              <span>Copyright &copy; Cyber Mechanical.</span> <span>All Right Reserved.</span>
+              <span>Copyright &copy; Amped Core Global.</span> <span>All Rights Reserved.</span>
             </div>
           </div>
 
         </div>
       </div>
     </div>
-
   </body>
 </html>
