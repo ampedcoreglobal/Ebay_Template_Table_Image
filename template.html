@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -35,6 +35,7 @@
             <img src="https://ampedcoreglobal.github.io/Ebay_Template_Table_Image/images/banner.png" alt="Amped Core Global">
           </div>
 
+          <!-- Navigation -->
           <div class="__template_nav_wrapper">
             <div class="__template_nav">
               <input type="checkbox" id="__mobile_nav" hidden>
@@ -78,6 +79,7 @@
             </div>
           </div>
 
+          <!-- Gallery -->
           <div class="__template_section_gallery">
             <div class="row">
               <div class="col-lg-6">
@@ -116,13 +118,14 @@
             </div>
           </div>
 
+          <!-- Description -->
           <div class="__template_section_description">
             {% if parent_listing.template_data_1 %}
               {{ parent_listing.template_data_1 }}
             {% endif %}
           </div>
 
-          <!-- ====== WORKING TABS ====== -->
+          <!-- Tabs -->
           <div class="__template_section_tab">
             <input type="radio" id="__tab_1" name="tabs" hidden checked>
             <input type="radio" id="__tab_2" name="tabs" hidden>
@@ -141,54 +144,71 @@
             </div>
 
             <div class="__tab_content_wrapper">
-              <div class="__tab_content __tab_1">
-                <div class="__tab_content_inner">
-                  <div class="__tab_description">
-                    <h2>About Amped Core Global</h2>
-                    <p>We specialize in high-output alternators designed for heavy-duty, performance, and luxury applications. Every unit is built to the highest standards and backed by our customer-first guarantee.</p>
+              
+              <div class="__tab_single">
+                <label for="__tab_1">About Us</label>
+                <div class="__tab_content __tab_1">
+                  <div class="__tab_content_inner">
+                    <div class="__tab_description">
+                      <h2>About Amped Core Global</h2>
+                      <p>We specialize in high-output alternators designed for heavy-duty, performance, and luxury applications. Every unit is built to the highest standards and backed by our customer-first guarantee.</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_content __tab_2">
-                <div class="__tab_content_inner">
-                  <div class="__tab_description">
-                    <h2>Payment</h2>
-                    <p>We accept PayPal, Apple Pay, Google Pay, and all major credit cards. Orders ship within 1 business day after payment clears.</p>
+              <div class="__tab_single">
+                <label for="__tab_2">Payment</label>
+                <div class="__tab_content __tab_2">
+                  <div class="__tab_content_inner">
+                    <div class="__tab_description">
+                      <h2>Payment</h2>
+                      <p>We accept PayPal, Apple Pay, Google Pay, and all major credit cards. Orders ship within 1 business day after payment clears.</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_content __tab_3">
-                <div class="__tab_content_inner">
-                  <div class="__tab_description">
-                    <h2>Shipping</h2>
-                    <p>We ship via UPS and USPS. Free shipping applies to the continental US only. Tracking is provided on all orders.</p>
+              <div class="__tab_single">
+                <label for="__tab_3">Shipping</label>
+                <div class="__tab_content __tab_3">
+                  <div class="__tab_content_inner">
+                    <div class="__tab_description">
+                      <h2>Shipping</h2>
+                      <p>We ship via UPS and USPS. Free shipping applies to the continental US only. Tracking is provided on all orders.</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_content __tab_4">
-                <div class="__tab_content_inner">
-                  <div class="__tab_description">
-                    <h2>Returns</h2>
-                    <p>We offer 30-day hassle-free returns. Please contact us before sending anything back to get the correct RMA and return address.</p>
+              <div class="__tab_single">
+                <label for="__tab_4">Return</label>
+                <div class="__tab_content __tab_4">
+                  <div class="__tab_content_inner">
+                    <div class="__tab_description">
+                      <h2>Returns</h2>
+                      <p>We offer 30-day hassle-free returns. Please contact us before sending anything back to get the correct RMA and return address.</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="__tab_content __tab_5">
-                <div class="__tab_content_inner">
-                  <div class="__tab_description">
-                    <h2>Contact Us</h2>
-                    <p><a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=ampedcoreglobal" target="_blank">Click here</a> to reach our support team. We’re here to ensure you get the best experience possible.</p>
+              <div class="__tab_single">
+                <label for="__tab_5">Contact Us</label>
+                <div class="__tab_content __tab_5">
+                  <div class="__tab_content_inner">
+                    <div class="__tab_description">
+                      <h2>Contact Us</h2>
+                      <p><a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=ampedcoreglobal" target="_blank">Click here</a> to reach our support team. We’re here to ensure you get the best experience possible.</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
-          <!-- ====== END WORKING TABS ====== -->
 
+          <!-- Footer -->
           <div class="__template_section_footer">
             <div class="__footer_links">
               <a href="https://www.ebay.com/str/ampedcoreglobal" target="_blank">Visit Store</a>
