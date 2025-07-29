@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,8 +21,7 @@
       {% endif %}{% endfor %}
       #__thumb_control_9:checked~.__thumb_control_right label[for="__thumb_control_1"] {
         display: block;
-      }
-      {% endif %}
+      }{% endif %}
     </style>
 
     <title>Amped Core Global</title>
@@ -33,9 +31,8 @@
       <div class="container">
         <div class="__template_inner">
 
-          <!-- Banner -->
           <div class="__template_banner">
-            <img src="https://ampedcoreglobal.github.io/Ebay_Template_Table_Image/images/banner.png">
+            <img src="https://ampedcoreglobal.github.io/Ebay_Template_Table_Image/images/banner.png" alt="Amped Core Global">
           </div>
 
           <!-- Navigation -->
@@ -43,29 +40,25 @@
             <div class="__template_nav">
               <input type="checkbox" id="__mobile_nav" hidden>
               <label for="__mobile_nav">Categories</label>
-
+              
               <div class="__template_nav_level_one">
                 <div class="__template_nav_div">
-
+                  
                   <div class="__template_nav_single">
                     <span class="__template_nav_link __template_nav_plus d-none d-md-block">Categories</span>
-
                     <div class="__template_nav_level_two">
                       <div class="__template_nav_div">
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-and-Alternator-Parts/_i.html?store_cat=37583950017" target="_blank" class="__template_nav_link">Alternators</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Alternators/_i.html" target="_blank" class="__template_nav_link">High Output Alternators</a>
                         </div>
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-and-Alternator-Parts/_i.html?store_cat=37583950017" target="_blank" class="__template_nav_link">Alternator Parts</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-and-Alternator-Parts/_i.html" target="_blank" class="__template_nav_link">Alternator Parts</a>
                         </div>
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/ampedcoreglobal/Alternators/_i.html?store_cat=37085748017" target="_blank" class="__template_nav_link">Big 3 Cable Upgrade Kits</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html" target="_blank" class="__template_nav_link">Starter Motors</a>
                         </div>
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/ampedcoreglobal/Automotive-Accessories/_i.html?store_cat=36661312017" target="_blank" class="__template_nav_link">High Output Alternators</a>
-                        </div>
-                        <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html?store_cat=51216825012" target="_blank" class="__template_nav_link">Starter Motors</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Automotive-Accessories/_i.html" target="_blank" class="__template_nav_link">Automotive Accessories</a>
                         </div>
                       </div>
                     </div>
@@ -75,7 +68,7 @@
                     <a href="https://www.ebay.com/str/ampedcoreglobal" target="_blank" class="__template_nav_link">Visit Store</a>
                   </div>
                   <div class="__template_nav_single d-none d-md-block">
-                    <a href="https://feedback.ebay.com/fdbk/feedback_profile/ampedcoreglobal" target="_blank" class="__template_nav_link">Reviews</a>
+                    <a href="https://www.ebay.com/fdbk/feedback_profile/ampedcoreglobal" target="_blank" class="__template_nav_link">Reviews</a>
                   </div>
                   <div class="__template_nav_single d-none d-md-block">
                     <a href="https://www.ebay.com/cnt/intermediatedFAQ?requested=ampedcoreglobal" target="_blank" class="__template_nav_link">Contact Us</a>
@@ -92,10 +85,7 @@
               <div class="col-lg-6">
                 <div class="__template_gallery">
                   <input type="radio" id="__image_1" name="image_gallery" hidden checked>
-                  {% for image in images %}{% if loop.index > 1 and loop.index <= 12 %}
-                  <input type="radio" id="__image_{{ loop.index }}" name="image_gallery" hidden>
-                  {% endif %}{% endfor %}
-
+                  {% for image in images %}{% if loop.index > 1 and loop.index <= 12 %}<input type="radio" id="__image_{{ loop.index }}" name="image_gallery" hidden>{% endif %}{% endfor %}
                   <div class="__big_thumb_wrapper">
                     <div class="__big_thumb_extend">
                       {% for image in images %}
@@ -110,48 +100,6 @@
                       {% endfor %}
                     </div>
                   </div>
-
-                  {% if images|length > 1 and images|length <= 4 %}
-                  <div class="__small_thumb_wrapper __small_thumb_alt">
-                    {% for image in images %}
-                    <div class="__small_thumb_single">
-                      <label for="__image_{{ loop.index }}" class="__small_thumb_lable">
-                        <img src="{{ image.full }}" alt="Amped Core Global">
-                      </label>
-                    </div>
-                    {% endfor %}
-                  </div>
-                  {% endif %}
-
-                  {% if images|length > 4 %}
-                  <div class="__small_thumb_wrapper">
-                    <input type="radio" id="__thumb_control_1" name="thumb_control" hidden checked>
-                    {% for image in images %}{% if images|length > 4 and loop.index <= 12 %}
-                    <input type="radio" id="__thumb_control_{{ loop.index - 3 }}" name="thumb_control" hidden>
-                    {% endif %}{% endfor %}
-                    <div class="__thumb_control_left">
-                      {% for image in images %}{% if images|length >= 4 and loop.index <= 12 %}
-                      <label for="__thumb_control_{{ loop.index - 3 }}"></label>
-                      {% endif %}{% endfor %}
-                    </div>
-                    <div class="__small_thumb">
-                      <div class="__small_thumb_extend">
-                        {% for image in images %}{% if loop.index <= 12 %}
-                        <div class="__small_thumb_single">
-                          <label for="__image_{{ loop.index }}" class="__small_thumb_lable">
-                            <img src="{{ image.full }}" alt="Amped Core Global">
-                          </label>
-                        </div>
-                        {% endif %}{% endfor %}
-                      </div>
-                    </div>
-                    <div class="__thumb_control_right">
-                      {% for image in images %}{% if images|length >= 4 and loop.index <= 12 %}
-                      <label for="__thumb_control_{{ loop.index - 3 }}"></label>
-                      {% endif %}{% endfor %}
-                    </div>
-                  </div>
-                  {% endif %}
                 </div>
               </div>
 
@@ -168,6 +116,13 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- Description -->
+          <div class="__template_section_description">
+            {% if parent_listing.template_data_1 %}
+              {{ parent_listing.template_data_1 }}
+            {% endif %}
           </div>
 
           <!-- Tabs -->
