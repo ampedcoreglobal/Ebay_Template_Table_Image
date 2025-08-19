@@ -223,7 +223,7 @@ label[for=__mobile_nav]::after {
 
 .__big_thumb_single {
 	position: relative;
-	height: auto; /* or a fixed height like 300px */
+	aspect-ratio: 1 / 1;
 }
 .__big_thumb_single img {
 	display: block;
@@ -835,6 +835,7 @@ label[for=__mobile_nav]::after {
 		max-width: 960px !important;
 	}
 } */
+
 
 
 
