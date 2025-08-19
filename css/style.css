@@ -212,13 +212,16 @@ label[for=__mobile_nav]::after {
 
 .__big_thumb_label {
 	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: block;
 	width: 100%;
-	padding: 0.5rem;
-	aspect-ratio: 1 / 1;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
+
+
 
 .__big_thumb_label img {
 	max-height: 100%;
@@ -822,3 +825,4 @@ label[for=__mobile_nav]::after {
 		max-width: 960px !important;
 	}
 } */
+
