@@ -221,9 +221,6 @@ label[for=__mobile_nav]::after {
 
 }
 
-.__big_thumb_wrapper {
-  height: 100px; /* or whatever consistent height you want */
-}
 
 .__big_thumb_single {
   position: relative;
@@ -840,6 +837,7 @@ label[for=__mobile_nav]::after {
 		max-width: 960px !important;
 	}
 } */
+
 
 
 
