@@ -1,7 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
@@ -55,10 +52,25 @@
                           <a href="https://www.ebay.com/str/ampedcoreglobal/Alternator-Parts/_i.html?store_cat=52262877012" target="_blank" class="__template_nav_link">Alternator Parts</a>
                         </div>
                         <div class="__template_nav_single">
-                          <a href="https://www.ebay.com/str/ampedcoreglobal/Big-3-Cable-Upgrade-Kits/_i.html?store_cat=52262876012" target="_blank" class="__template_nav_link">Big 3 Cable Upgrade Kits</a>
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Big-3-Cable-Upgrade-Kits/_i.html?store_cat=52262876012" target="_blank" class="__template_nav_link">Battery Cable Upgrade Kits</a>
+                        </div>
+
+                        <div class="__template_nav_single">
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html?store_cat=51216825012" target="_blank" class="__template_nav_link">Magnetic Phone Holders</a>
+                        </div>
+     <div class="__template_nav_single">
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html?store_cat=51216825012" target="_blank" class="__template_nav_link">Nitrogen Oxide Sensors</a>
                         </div>
                         <div class="__template_nav_single">
                           <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html?store_cat=51216825012" target="_blank" class="__template_nav_link">Starter Motors</a>
+                        </div>
+
+ <div class="__template_nav_single">
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html?store_cat=51216825012" target="_blank" class="__template_nav_link">Starter Motor Parts</a>
+                        </div>
+
+                 <div class="__template_nav_single">
+                          <a href="https://www.ebay.com/str/ampedcoreglobal/Starter-Motors/_i.html?store_cat=51216825012" target="_blank" class="__template_nav_link">Other</a>
                         </div>
                       </div>
                     </div>
@@ -80,43 +92,95 @@
           </div>
 
           <!-- Gallery -->
-          <div class="__template_section_gallery">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="__template_gallery">
-                  <input type="radio" id="__image_1" name="image_gallery" hidden checked>
-                  {% for image in images %}{% if loop.index > 1 and loop.index <= 12 %}<input type="radio" id="__image_{{ loop.index }}" name="image_gallery" hidden>{% endif %}{% endfor %}
-                  <div class="__big_thumb_wrapper">
-                    <div class="__big_thumb_extend">
-                      {% for image in images %}
-                      {% if loop.index >= 1 and loop.index <= 12 %}
-                      <div class="__big_thumb_single">
-                        <input type="checkbox" id="__image_light_{{ loop.index }}" hidden>
-                        <label for="__image_light_{{ loop.index }}" class="__big_thumb_label">
-                          <img src="{{ image.full }}" alt="Amped Core Global">
-                        </label>
-                      </div>
-                      {% endif %}
-                      {% endfor %}
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="__template_section_gallery">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="__template_gallery">
 
-              <div class="col-lg-6">
-                <div class="__template_title">
-                  <h1>{{title}}</h1>
-                </div>
-                <div class="__template_bullets">
-                  <ul>
-                    {% for bullet in bullets %}
-                    <li>{{ bullet }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
+        <!-- Image selectors -->
+        {% for image in images %}
+        {% if loop.index == 1 %}
+        <input type="radio" id="__image_{{ loop.index }}" name="image_gallery" hidden checked>
+        {% elif loop.index <= 12 %}
+        <input type="radio" id="__image_{{ loop.index }}" name="image_gallery" hidden>
+        {% endif %}
+        {% endfor %}
+
+        <!-- Big image display -->
+        <div class="__big_thumb_wrapper">
+          <div class="__big_thumb_extend">
+            {% for image in images %}
+            {% if loop.index <= 12 %}
+            <div class="__big_thumb_single">
+              <input type="checkbox" id="__image_light_{{ loop.index }}" hidden>
+              <label for="__image_light_{{ loop.index }}" class="__big_thumb_label">
+                <img src="{{ image.full }}" alt="Amped Core Global">
+              </label>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="__small_thumb_wrapper">
+          {% for image in images %}
+          {% if loop.index == 1 %}
+          <input type="radio" id="__thumb_control_{{ loop.index }}" name="thumb_control" hidden checked>
+          {% elif loop.index <= 12 %}
+          <input type="radio" id="__thumb_control_{{ loop.index }}" name="thumb_control" hidden>
+          {% endif %}
+          {% endfor %}
+
+          <div class="__thumb_control_left">
+            {% for image in images %}
+            {% if loop.index <= 12 %}
+            <label for="__thumb_control_{{ loop.index }}"></label>
+            {% endif %}
+            {% endfor %}
+          </div>
+
+          <div class="__small_thumb">
+            <div class="__small_thumb_extend">
+              {% for image in images %}
+              {% if loop.index <= 12 %}
+              <div class="__small_thumb_single">
+                <label for="__image_{{ loop.index }}" class="__small_thumb_label">
+                  <img src="{{ image.full }}" alt="Amped Core Global">
+                </label>
               </div>
+              {% endif %}
+              {% endfor %}
             </div>
           </div>
+
+          <div class="__thumb_control_right">
+            {% for image in images %}
+            {% if loop.index <= 12 %}
+            <label for="__thumb_control_{{ loop.index }}"></label>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Column: Title & Bullets -->
+    <div class="col-lg-6">
+      <div class="__template_title">
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="__template_bullets">
+        <ul>
+          {% for bullet in bullets %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
           <!-- Description -->
           <div class="__template_section_description">
@@ -151,11 +215,13 @@
                   <div class="__tab_content_inner">
                     <div class="__tab_description">
                       <h2>WHY CHOOSE US?</h2>
-                      <p>At Amped Core Global, we’re driven to deliver the ultimate customer experience. We specialize in high-output alternators engineered to deliver significantly higher amperage than stock units, giving your vehicle the power it truly deserves. From heavy-duty applications to high-performance builds and luxury vehicles, our alternators are designed to meet the demands of every brand and model.
+                      <p>At Amped Core Global, we’re driven to deliver the ultimate customer experience. We specialize in high-output alternators and premium starter motors, engineered to deliver the performance, reliability, and power your vehicle truly deserves. From heavy-duty applications to high-performance builds and luxury vehicles, our products are designed to meet the demands of every brand and model. Beyond starters and alternators, we also supply key supporting parts to keep your vehicle running at its best.
 
-Every unit is built to the highest industry standards in state-of-the-art facilities, ensuring unmatched performance, durability, and reliability. With competitive pricing and exceptional customer support, we put your satisfaction at the center of everything we do.
+For customers looking for a unique touch, we offer select alternator models with custom powder-coated finishes. We also carry OEM-grade nitrogen oxide sensors for trucks, ensuring precise factory-level performance and reliability. Every product is built to the highest industry standards in state-of-the-art facilities, ensuring unmatched durability and long-lasting value.
 
-When you choose Amped Core Global, you’re not just buying a part, you’re investing in power, quality, and long-lasting value. Let us fuel your automotive journey with alternators built to outperform and engineered to last. Quality. Power. Satisfaction—Guaranteed.
+With competitive pricing and exceptional customer support, we put your satisfaction at the center of everything we do. When you choose Amped Core Global, you’re not just buying a part, you’re investing in power, quality, and reliability built to last.
+
+Quality. Power. Satisfaction. Guaranteed.
                       <p>Visit our store by <a href="https://www.ebay.com/str/ampedcoreglobal" target="_blank">Clicking Here</a>.</p>
                     </div>
                   </div>
