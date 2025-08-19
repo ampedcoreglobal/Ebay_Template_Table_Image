@@ -221,6 +221,10 @@ label[for=__mobile_nav]::after {
 
 }
 
+.__big_thumb_single {
+	position: relative;
+}
+
 
 
 .__big_thumb_label img {
@@ -825,4 +829,5 @@ label[for=__mobile_nav]::after {
 		max-width: 960px !important;
 	}
 } */
+
 
