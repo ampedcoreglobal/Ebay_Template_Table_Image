@@ -223,6 +223,12 @@ label[for=__mobile_nav]::after {
 
 .__big_thumb_single {
 	position: relative;
+	height: auto; /* or a fixed height like 300px */
+}
+.__big_thumb_single img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 
@@ -829,5 +835,6 @@ label[for=__mobile_nav]::after {
 		max-width: 960px !important;
 	}
 } */
+
 
 
