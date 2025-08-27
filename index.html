@@ -180,10 +180,22 @@
                     }
                   });
 
-                  output_contnet += `<div class="__des_section"><div class="__des_section_title">Fitment Chart</div><div class="__des_section_content border-0 p-0"><div class="__table_col_five"><table><tr><td>${output_array[0][0]}</td><td>${output_array[0][1]}</td><td>${output_array[0][2]}</td><td>${output_array[0][3]}</td><td>${output_array[0][4]}</td></tr>`;
+                  output_contnet += `<div class="__des_section"><div class="__des_section_title">Fitment Chart</div><div class="__des_section_content border-0 p-0"><div class="__table_col_five"><table><tr>
+  <td><strong>${output_array[0][0]}</strong></td>
+  <td>${output_array[0][1]}</td>
+  <td>${output_array[0][2]}</td>
+  <td>${output_array[0][3]}</td>
+  <td>${output_array[0][4]}</td>
+</tr>`;
 
                   for (let i = 1; i < output_array.length; i++) {
-                    output_contnet += `<tr><td>${output_array[i][0]}</td><td>${output_array[i][1]}</td><td>${output_array[i][2]}</td><td>${output_array[i][3]}</td><td>${output_array[i][4]}</td></tr>`;
+                    output_contnet += `<tr>
+  <td><strong>${output_array[i][0]}</strong></td>
+  <td>${output_array[i][1]}</td>
+  <td>${output_array[i][2]}</td>
+  <td>${output_array[i][3]}</td>
+  <td>${output_array[i][4]}</td>
+</tr>`;
                   }
 
                   output_contnet += `</table></div></div></div>`;
@@ -293,6 +305,7 @@
     </script>
   </body>
 </html>
+
 
 
 
